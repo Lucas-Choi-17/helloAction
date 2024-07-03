@@ -44,7 +44,7 @@ jobs:
     steps:
     # NCP SSH 접속 / docker image pull & run
     - name: NCP SSH Login and Docker Image pull and run
-      uses: appleboy/ssh-action@main
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.NCP_HOST }}
         username: ${{ secrets.NCP_USERNAME }}
